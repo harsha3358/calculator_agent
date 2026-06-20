@@ -1,109 +1,27 @@
-#  GenAlpha CLI Calculator  
-### Advanced Stack-Based Expression Evaluator
+# Stack-Based CLI Calculator
 
-A command-line calculator built using core Data Structures (Arrays & Stacks) that supports:
+A command-line calculator that evaluates mathematical expressions using stacks instead of relying on Python's built-in expression evaluator.
 
-- Infix to Postfix conversion
-- Operator precedence handling
-- Parentheses
-- Decimal numbers
-- Power operator (^)
-- Undo functionality
-- History tracking
-- Clean OOP architecture
+## Why it matters
 
----
+This project demonstrates the same parsing ideas used in compilers, formula engines, and financial calculation tools, packaged as a small learning application.
 
-## 🧠 Concepts Implemented
+## Features
 
-| Concept | Implementation |
-|----------|---------------|
-| Stack | Expression evaluation & Undo feature |
-| Array (Dynamic List) | History storage |
-| Infix → Postfix | Stack-based parsing |
-| Operator Precedence | Custom precedence logic |
-| Time Complexity | O(n) per expression |
+- Operator precedence and parentheses
+- Decimal numbers and powers
+- Infix-to-postfix conversion
+- Calculation history and undo
+- Error handling
 
----
+## Technology
 
-## ⚙️ Features
+Python, object-oriented programming, arrays, and stacks.
 
-- ✅ Addition, Subtraction, Multiplication, Division
-- ✅ Power operator (^)
-- ✅ Decimal number support
-- ✅ Parentheses support
-- ✅ Undo last calculation
-- ✅ Calculation history
-- ✅ CLI interactive menu
-- ✅ Error handling
-
----
-
-## 🖥️ Example Inputs
-
-```
-2.5 + 3.5
-5 ^ 2
-2 + 3 * 4
-( 2 + 3 ) ^ 2
-```
-
----
-
-## ▶️ How to Run
+## Run
 
 ```bash
-python genalpha_cli_calculator.py
+python cli_calculator.py
 ```
 
----
-
-## 🧪 Sample Output
-
-```
-Result: 6.0
-Result: 25.0
-Result: 14.0
-Result: 25.0
-```
-
----
-
-## 📊 Time Complexity
-
-| Operation | Complexity |
-|------------|------------|
-| Infix to Postfix | O(n) |
-| Postfix Evaluation | O(n) |
-| Undo | O(1) |
-| History Append | O(1) |
-
----
-
-## 📌 Project Architecture
-
-```
-CalculatorCLI
- ├── precedence()
- ├── infix_to_postfix()
- ├── evaluate_postfix()
- ├── calculate()
- ├── undo()
- └── show_history()
-```
-
----
-
-
-
-## 👨‍💻 Built With
-
-- Python 3
-- Core Data Structures
-- Object-Oriented Programming
-
----
-
-## 📜 License
-
-MIT License
+Example input: `(2 + 3) ^ 2`
